@@ -1,7 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RegistrationPage.aspx.cs" Inherits="Student.RegistrationPage" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RegistrationPageMod.aspx.cs" Inherits="Student.RegistrationPageMod" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="jumbotron">
+        <div class="jumbotron">
         <h1>Welcome 
             <asp:Label ID="Label1" runat="server"></asp:Label>
         </h1>
@@ -9,7 +8,7 @@
         <p>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="RequiredFieldValidator">*</asp:RequiredFieldValidator>
             Roll No.&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" Enabled="False"></asp:TextBox>
         </p>
         <p>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="*"></asp:RequiredFieldValidator>
@@ -118,9 +117,9 @@
         </p>
         <p>&nbsp;</p>
         <p>
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Modify" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Reset" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Delete" />
         </p>
     </div>
 </asp:Content>

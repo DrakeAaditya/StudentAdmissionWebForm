@@ -10,7 +10,7 @@
 namespace Student {
     
     
-    public partial class RegistrationPage {
+    public partial class RegistrationPageMod {
         
         /// <summary>
         /// Label1 control.

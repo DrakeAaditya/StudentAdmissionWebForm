@@ -21,7 +21,7 @@ namespace Student
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("RegistrationPageMod.aspx");
         }
     }
 }

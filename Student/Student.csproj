@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -147,6 +148,7 @@
     </Content>
     <Content Include="RegistrationPage.aspx" />
     <Content Include="RegistrationPageMain.aspx" />
+    <Content Include="RegistrationPageMod.aspx" />
     <Content Include="WelcomePage.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -224,6 +226,13 @@
     </Compile>
     <Compile Include="RegistrationPageMain.aspx.designer.cs">
       <DependentUpon>RegistrationPageMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationPageMod.aspx.cs">
+      <DependentUpon>RegistrationPageMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrationPageMod.aspx.designer.cs">
+      <DependentUpon>RegistrationPageMod.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
